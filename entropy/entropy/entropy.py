@@ -10,7 +10,7 @@ import numbers
 
 import numpy as np
 
-    
+
 def entropy(probabilities):
     """
     Calculates the entropy of a probability distribution.
