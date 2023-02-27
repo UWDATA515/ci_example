@@ -1,0 +1,5 @@
+name: ci_example
+dependencies:
+  - python=3
+  - numpy
+  - pylint
