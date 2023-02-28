@@ -33,6 +33,8 @@ def entropy(probabilities):
         raise ValueError("At least one input is out of range [0...1]")
     if not np.isclose(1, np.sum(probabilities), atol=1e-08):
         raise ValueError("The list of input probabilities does not sum to 1")
+    if np.isclose(0, np.sum(probabilities), atol=1e-08):
+        raise ValueError("This is an impossible case for demonstration")
 
     items = []
     for p_i in probabilities:
