@@ -15,7 +15,6 @@ on: [push]
 #       - main
 #       - someotherbranch
 
-
 # A list of jobs to run as part of the workflow
 jobs:
 
@@ -74,11 +73,18 @@ jobs:
       # You don't normally need test coverage information when
       # developing locally - we just want it in CI - so we install
       # it here instead of in our environment file (which we also
-      # use locally).
+      # use locally). The coverage package that we download here
+      # does not support the "lcov" file format that Coveralls
+      # expects, so we'll use the coverage-lcov package to convert
+      # into the lcov format. coverage-lcov isn't available via
+      # conda so we install it with pip.
       - name: Install additional development dependencies
         run: |
-          conda install --yes coverage coveralls
+          conda install --yes coverage
           pip install coverage-lcov
+      
+      # If there are any other steps in order for your tests to
+      # run successfully, you can add those steps here!
 
       # Next step: run pylint. Anything less than 10/10 will fail.
       - name: Lint with pylint
@@ -93,7 +99,7 @@ jobs:
           coverage report
           coverage-lcov
       
-      # Lastly: report code coverage
+      # Lastly: report code coverage to Coveralls.
       - name: Report code coverage to Coveralls
         uses: coverallsapp/github-action@master
         with:
