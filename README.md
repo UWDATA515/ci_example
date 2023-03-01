@@ -50,6 +50,10 @@ After running a workflow that has coverage enabled, go to
 https://coveralls.io to see your coverage information! Authenticate
 with your GitHub account.
 
+Since we've configured this workflow to run every time a pull request
+is created, Coveralls will comment on the corresponding PR with the
+code coverage information!
+
 Create a .coveragerc file that specifies what should be included in the coverage calculations, e.g.
 
 ```
