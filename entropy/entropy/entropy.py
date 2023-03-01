@@ -28,6 +28,7 @@ def entropy(probabilities):
     sum to 1 (ie are not a real probability distribution).
     """
     if any(not isinstance(p_i, numbers.Number) for p_i in probabilities):
+        print('Hello world')
         raise ValueError("At least one input is not a number")
     if any((p_i < 0.0) or (p_i > 1.0) for p_i in probabilities):
         raise ValueError("At least one input is out of range [0...1]")
