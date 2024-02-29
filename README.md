@@ -3,6 +3,11 @@
 ![Build/Test Workflow](https://github.com/UWDATA515/ci_example/actions/workflows/build_test.yml/badge.svg)
 [![Coverage Status](https://coveralls.io/repos/github/UWDATA515/ci_example/badge.svg?branch=main)](https://coveralls.io/github/UWDATA515/ci_example?branch=main)
 
+## Package configuration in pyproject.toml
+
+Check out `pyproject.toml` for an example of how your project might be
+packaged for release for others to use via PyPi.
+
 ## GitHub Actions Workflow
 
 In this example repository, we demonstrate how to use GitHub Actions to
