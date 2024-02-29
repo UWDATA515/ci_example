@@ -1,0 +1,4 @@
+# You can either create this file manually, or you can generate this
+# file using the following command:
+#     pip freeze > requirements.txt
+numpy

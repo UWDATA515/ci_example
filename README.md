@@ -3,6 +3,11 @@
 ![Build/Test Workflow](https://github.com/UWDATA515/ci_example/actions/workflows/build_test.yml/badge.svg)
 [![Coverage Status](https://coveralls.io/repos/github/UWDATA515/ci_example/badge.svg?branch=main)](https://coveralls.io/github/UWDATA515/ci_example?branch=main)
 
+## Package configuration in pyproject.toml
+
+Check out `pyproject.toml` for an example of how your project might be
+packaged for release for others to use via PyPi.
+
 ## GitHub Actions Workflow
 
 In this example repository, we demonstrate how to use GitHub Actions to
@@ -71,4 +76,4 @@ code coverage calculations. If you're doing any heavy lifting in your
 `__init__.py`, then you shouldn't remove it from coverage reporting!
 
 If you used this repo as a template and include the workflow steps to
-report coverage information to Coveralls, you will also have coverage data that you can get a badge for. To do that, sign in to https://coveralls.io with your GitHub account. On the left hand side select ADD REPOS and flip the slider switch for the repo you want. Look for the box at the bottom of the page labeled BADGE YOUR REPO: CODEBASE and click the EMBED button to get a list of the ways to embed and copy the markdown one and paste it in your README!
+report coverage information to Coveralls, you will also have coverage data that you can get a badge for. To do that, sign in to https://coveralls.io with your GitHub account. On the left hand side select ADD REPOS and flip the slider switch for the repo you want. Look for the box at the bottom of the page labeled BADGE YOUR REPO: CODEBASE and click the EMBED button to get a list of the ways to embed and copy the markdown one and paste it in your README.
