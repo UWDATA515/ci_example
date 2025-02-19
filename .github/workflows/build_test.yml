@@ -111,7 +111,7 @@ jobs:
           # This holds off on reporting code coverage to
           # coveralls until all runs are done. If you don't have
           # a matrix, this isn't needed.
-          flag-name: run ${{ join(matrix.*, ' - ') }}
+          flag-name: run-${{ join(matrix.*, ' - ') }}
           parallel: true
 
   # After all the parallel matrix runs for build_test are done
@@ -129,6 +129,3 @@ jobs:
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
         parallel-finished: true
-        # This says finish the parallel runs that we did above
-        # and send to Coveralls.
-        carryforward: "run-3.7,run-3.8,run-3.9,run-3.10"
