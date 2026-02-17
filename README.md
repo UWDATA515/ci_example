@@ -16,7 +16,7 @@ GitHub's servers.
 The workflow configuration is in `.github/workflows/build_test.yml`.
 Take a look at that file to see how the workflow itself is built. This
 configuration draws heavily from GitHub's guidance on
-[Python workflows](https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python),
+[Python workflows](https://docs.github.com/en/actions/tutorials/build-and-test-code/python),
 so take a look at the documentation for more details and explanation.
 
 A full guide to GitHub Actions lives in [GitHub's documentation](https://docs.github.com/en/actions).
