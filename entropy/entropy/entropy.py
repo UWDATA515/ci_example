@@ -37,6 +37,6 @@ def entropy(probabilities):
     items = []
     for p_i in probabilities:
         if p_i > 0:
-            interm = p_i ** np.log2(p_i)
+            interm = p_i * np.log2(p_i)
             items.append(interm)
     return np.abs(-np.sum(items))
